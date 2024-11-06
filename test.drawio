@@ -1,1 +1,64 @@
-
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (iPad; CPU OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/130.0.6723.37 Mobile/15E148 Safari/604.1" version="24.8.4">
+  <diagram name="Page-1" id="mYPGpzDaeTao5HvRzffD">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Flink Job" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="492" y="8" width="365" height="427" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Kafka" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="8" y="54" width="358" height="326" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Listener" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="33" y="205" width="82" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Flink Job" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="227" y="165" width="114" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Procesar Mensaje A" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="517" y="43" width="154" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Procesar Mensaje B" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="518" y="247" width="153" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Kafka" style="rounded=1;whiteSpace=wrap;arcSize=50;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="769" y="205" width="64" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Mensaje" style="curved=1;startArrow=none;endArrow=block;exitX=0.99;exitY=0.48;entryX=0;entryY=0.5;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="Mensaje A" style="curved=1;startArrow=none;endArrow=block;exitX=0.9;exitY=0;entryX=0;entryY=0.5;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="366" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Mensaje B" style="curved=1;startArrow=none;endArrow=block;exitX=0.9;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="366" y="324" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Alerta" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0.28;entryY=-0.01;" edge="1" parent="1" source="6" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Alerta" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0.28;entryY=0.97;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="324" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
